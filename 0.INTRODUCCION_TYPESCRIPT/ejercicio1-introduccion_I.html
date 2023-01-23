@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        detro de una etiqueta script->asociaciones a typescript.
+    -->
+    <script>
+        /*
+        Asociaciones de otros lenguajes, tales como EcmaScript6 y JavaScript, elementos que va
+        a recoger:
+        🚨 1. Flecha arrow
+        🚨 2. Desestructuracion (Desestructuring), adaptacion orientada a objeto, basado en Clases
+        🚨 3 Class, propiedades del objeto
+        🚨 4 Template, variacion {variable} + Doctype
+        🚨 5 Herencia
+        🚨 6 Variables, mejora del typado
+
+
+                                ======================
+                                    funcion arrow => 
+                                ======================
+
+
+            [inicio]
+            var Array = [{elemento1:2},{elemento2:5},{elemento3:8}...argumentos]
+            var.Array.foreach(function(parametro1,parametro2, indice, array)){ true
+                metodos declarado
+            }
+            [1º evolucion]
+            var.Array.foreach(funtion(elemento)){
+                metodos declarados
+            }
+            {2º evolucion}
+            var.Array.foreach(elemento=>{metodos declarados})
+
+            {3º evolucion} funcion anonima
+            elemento o funcion => {elementos metodos declarados}
+        */
+//1º
+        var datos =[1,2,3,4,5,6]
+            for (const i in datos) {
+               console.log(i)
+                }
+//2º
+            datos.forEach(prueba2=>{console.log(prueba2)});
+
+//3º añadimos el concepto return;
+                var otraFucinon = function(numero){
+                    return numero+2
+                }
+ // evolucion + return
+                
+                var otraFucinon = (numero)=>numero+2
+            console.log(otraFucinon(6))
+    </script>
+
+</body>
+</html>
